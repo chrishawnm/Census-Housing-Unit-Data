@@ -1,10 +1,10 @@
-Alabama,1
-Alaska,2
-Arizona,4
-Arkansas,5
-California,6
-Colorado,8
-Connecticut,9
+Alabama,01
+Alaska,02
+Arizona,04
+Arkansas,05
+California,06
+Colorado,08
+Connecticut,09
 Delaware,10
 District of Columbia,11
 Florida,12
