@@ -20,3 +20,5 @@ Here are some of the other variables you can requests in your API: 'https://www.
 
 *I use the geoup library to extract the longitude and latitude for each county 
 
+Here's an example of a heatmap I did of Michigan estimated population data for 2012 using the census bureau data
+![Image of heatmap](https://github.com/chrishawnm/Census-Population-Estimate-Data-API/blob/master/Estimated%20Population.JPG)
