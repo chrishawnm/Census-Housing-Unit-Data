@@ -88,9 +88,17 @@ df3 = pd.merge(p1, c1)
 #converting population to integer to be used in analysis
 df3["Population"] = pd.to_numeric(df3["Population"])
 
+
+#Provide a year to visualize
+VisYear = '2012'
+
+df3byYear = df3.loc[df3["Year"]== VisYear]
+
 #correlation
-print(df3.corr())
+###print(df3.corr())
 
 #heatmap of U.S.
-print(plt.show(df3.plot(kind ="scatter", x = 'Longitude', y = 'Latitude',figsize = (7,7),alpha = .4)))
-
+print(plt.show(df3byYear.plot(kind ="scatter", x = 'Longitude', y = 'Latitude' ,figsize = (7,7)
+                              ,label = "Estimated Population for Year " + VisYear + " of " + State_Input
+                              ,alpha = .3
+                              ,s=df3byYear['Population']*.001)))
