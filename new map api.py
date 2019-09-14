@@ -82,16 +82,15 @@ while index < len(counties):
 p1 = DataFrame.from_records(popdata, columns=['Year', 'Population', 'County'])
 c1 = DataFrame.from_records(counties_long_lat, columns=['County', 'Latitude', 'Longitude'])
 
-
 df3 = pd.merge(p1, c1)
 
 #converting population to integer to be used in analysis
 df3["Population"] = pd.to_numeric(df3["Population"])
 
-
 #Provide a year to visualize
 VisYear = '2012'
 
+#filtering data by that month
 df3byYear = df3.loc[df3["Year"]== VisYear]
 
 #correlation
