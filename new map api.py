@@ -28,7 +28,8 @@ if CensusStateCodeValue < 10:
     CensusStateCodeValue = '0' + str(CensusStateCodeValue)
 
 # obtaing the api data
-data = requests.get('https://api.census.gov/data/2018/pep/population?get=DATE_CODE,DATE_DESC,POP,GEONAME,STATE&for=county:*&in=state:'
+data = requests.get(
+    'https://api.census.gov/data/2018/pep/population?get=DATE_CODE,DATE_DESC,POP,GEONAME,STATE&for=county:*&in=state:'
     + str(CensusStateCodeValue)
     + '&key=' + YOUR_KEY)
 
